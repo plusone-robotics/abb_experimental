@@ -127,50 +127,50 @@
     <!-- joint list -->
     <joint name="${prefix}joint_1" type="revolute">
       <origin xyz="0 0 0.1245"  rpy="0 0 0" />
-      <parent link="base_link" />
-      <child link="link_1" />
+      <parent link="${prefix}base_link" />
+      <child link="${prefix}link_1" />
       <axis xyz="0 0 1" />
       <limit lower="-3.1416" upper="3.1416" effort="0" velocity="2.618" />
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
       <origin xyz="0.15 0 0.36199" rpy="0 0 0" />
-      <parent link="link_1" />
-      <child link="link_2" />
+      <parent link="${prefix}link_1" />
+      <child link="${prefix}link_2" />
       <axis xyz="0 -1 0" />
       <limit lower="-1.5708" upper="2.618" effort="0" velocity="2.7925" />
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
       <origin xyz="0 0 0.70001" rpy="0 0 0" />
-      <parent link="link_2" />
-      <child link="link_3" />
+      <parent link="${prefix}link_2" />
+      <child link="${prefix}link_3" />
       <axis xyz="0 1 0" />
       <limit lower="-4.2760566674" upper="1.1345" effort="0" velocity="2.967059728" />
     </joint>
     <joint name="${prefix}joint_4" type="revolute">
       <origin xyz="0.314 0 0" rpy="0 0 0" />
-      <parent link="link_3" />
-      <child link="link_4" />
+      <parent link="${prefix}link_3" />
+      <child link="${prefix}link_4" />
       <axis xyz="-1 0 0" />
       <limit lower="-3.490658504" upper="3.490658504" effort="0" velocity="5.585053606" />
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
       <origin xyz="0.286 0 0" rpy="0 0 0" />
-      <parent link="link_4" />
-      <child link="link_5" />
+      <parent link="${prefix}link_4" />
+      <child link="${prefix}link_5" />
       <axis xyz="0 1 0" />
       <limit lower="-2.0071286398" upper="2.0071286398" effort="0" velocity="6.981317008" />
     </joint>
     <joint name="${prefix}joint_6" type="revolute">
       <origin xyz="0 0 0" rpy="0 0 0" />
-      <parent link="link_5" />
-      <child link="link_6" />
+      <parent link="${prefix}link_5" />
+      <child link="${prefix}link_6" />
       <axis xyz="1 0 0" />
       <limit lower="-6.9813" upper="6.9813" effort="0" velocity="8.0285" />
     </joint>
     <joint name="${prefix}joint_6-tool0" type="fixed">
       <origin xyz="0.065 0 0" rpy="0 1.57079 0" />
-      <parent link="link_6" />
-      <child link="tool0" />
+      <parent link="${prefix}link_6" />
+      <child link="${prefix}tool0" />
     </joint>
 	<!-- end of joint list -->
   </xacro:macro>
